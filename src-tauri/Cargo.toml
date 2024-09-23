@@ -20,9 +20,10 @@ anyhow = "1.0.89"
 futures = "0.3.30"
 russh = "0.45.0"
 async-trait = "0.1.82"
-nix = "0.25.1"
 dirs = "5.0.1"
 uuid = { version = "1.10.0", features = ["v4"] }
+winreg = "0.52.0"
+which = "6.0.3"
 
 [features]
 # This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!

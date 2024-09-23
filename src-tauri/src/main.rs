@@ -1,10 +1,6 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
-use std::thread;
-use anyhow::{anyhow, Error};
-use futures::future::err;
 use futures::TryFutureExt;
-use nix::pty::SessionId;
 use tauri::{Manager, State};
 use uuid::Uuid;
 use crate::pty_conn::PtyConn;

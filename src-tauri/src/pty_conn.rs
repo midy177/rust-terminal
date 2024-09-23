@@ -34,7 +34,7 @@ impl PtyConn {
           }
       }
 
-      let mut child = pty_pair
+      let child = pty_pair
           .slave
           .spawn_command(cmd)
           .map_err(|err| err.to_string());
